@@ -1,5 +1,7 @@
 # El precio de la autonomía · Historia interactiva
 
+**Publicado:** [Historia interactiva](https://adrianaamadorverdecia.github.io/el-precio-de-la-autonomia/) · [Repositorio](https://github.com/AdrianaAmadorVerdecia/el-precio-de-la-autonomia)
+
 Sitio web estático (HTML, CSS y JavaScript, sin frameworks) que convierte el estudio
 *El precio de la autonomía* en una historia interactiva de 4 escenas cortas:
 
