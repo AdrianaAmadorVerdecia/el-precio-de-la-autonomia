@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El precio de la autonomía · Historia interactiva</title>
+  <meta name="description" content="Lucy tiene $1.500 y 20 km al día. Descubre con datos reales qué vehículo eléctrico le conviene y por qué los anuncios mienten.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2300E676'/%3E%3Cpath d='M18 42l14-20 14 20z' fill='%238A2BE2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!--
+    GA4: pega aquí tu etiqueta cuando tengas el ID de medición.
+    Los eventos encuesta_enviada y feedback_historia ya se envían a window.dataLayer.
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+  -->
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="skip" href="#app">Saltar a la historia</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>El precio de la autonomía</span>
+      <small>Cuba · 2025</small>
+    </div>
+    <div class="progress">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="progress-label" id="progressLabel">Escena 1 de 4</p>
+    </div>
+    <button type="button" class="btn btn-primary btn-small topbar-next" id="topNext" data-lucy>Empezar</button>
+  </header>
+
+  <main id="app">
+    <section class="step step-lucy" data-step="1" aria-labelledby="s1t">
+      <div class="hero-top">
+        <div class="hero-inner">
+          <p class="kicker">Historia interactiva · Movilidad eléctrica en Cuba</p>
+          <h1 id="s1t" tabindex="-1">El precio de la autonomía</h1>
+          <p class="hook">¿Cuánto cuesta realmente moverte?</p>
+          <div class="actions">
+            <button type="button" class="btn btn-primary btn-big" data-lucy>Empezar con Lucy</button>
+            <button type="button" class="btn btn-ghost" data-next>Ajustar mis datos</button>
+          </div>
+          <p class="micro">406 anuncios observados y 35 encuestas reales.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="orb orb-a"></span>
+          <span class="orb orb-b"></span>
+          <span class="orb orb-c"></span>
+        </div>
+      </div>
+
+      <div class="lucy-layout">
+        <div class="lucy-story">
+          <p class="kicker">La historia de Lucy</p>
+          <p class="lead">Lucy es estudiante, vive en La Habana y ahorró $1.500. Quiere llegar a clases sin gastar una fortuna, pero los anuncios le prometen autonomías que parecen demasiado buenas.</p>
+          <p>Sus amigas ya le advirtieron: «los anuncios mienten». En vez de confiar en la primera oferta, Lucy decidió mirar los datos: 406 anuncios observados y 35 personas que ya conducen uno de estos vehículos.</p>
+          <p>Esta historia sigue su decisión. Tú puedes usar su perfil o ajustar el tuyo.</p>
+        </div>
+        <aside class="lucy-card" aria-label="Perfil de Lucy">
+          <div class="lucy-avatar" aria-hidden="true">L</div>
+          <h3>Lucy</h3>
+          <p class="micro">Estudiante · La Habana</p>
+          <dl class="lucy-stats">
+            <div><dt>Presupuesto</dt><dd>$1.500</dd></div>
+            <div><dt>Recorrido</dt><dd>20 km/día</dd></div>
+            <div><dt>Prioridad</dt><dd>Gastar menos</dd></div>
+            <div><dt>Miedo</dt><dd>Quedarse sin batería</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="evidencia">
+        <p class="kicker">La evidencia</p>
+        <div class="stat-strip" aria-label="Resumen de los datos">
+          <article class="stat-pill">
+            <strong data-stat="productos_observados">406</strong>
+            <span>anuncios observados</span>
+            <small><span data-stat="productos">405</span> usados en el cálculo</small>
+          </article>
+          <article class="stat-pill">
+            <strong data-stat="encuestas">35</strong>
+            <span>personas encuestadas</span>
+            <small>Dueños y usuarios reales</small>
+          </article>
+          <article class="stat-pill">
+            <strong data-stat="tipos">3</strong>
+            <span>tipos de vehículo</span>
+            <small>Moto, bicicleta y patinete</small>
+          </article>
+        </div>
+        <details class="plegable">
+          <summary>Lo que revelan los datos</summary>
+          <p class="lead">Estos números salen de 406 anuncios y 35 encuestas recogidas para el estudio. No son promesas de catálogo: son lo que la gente publica y lo que los dueños reportan.</p>
+          <div class="hallazgos">
+            <article>
+              <h3>Los anuncios prometen más</h3>
+              <p>La autonomía publicada no siempre coincide con la que reportan los dueños. En la moto y el patinete, la diferencia es clara.</p>
+            </article>
+            <article>
+              <h3>La batería se degrada</h3>
+              <p>Con los años, la autonomía baja. La pérdida promedio observada va del 15 % al 20 %.</p>
+            </article>
+            <article>
+              <h3>El presupuesto manda</h3>
+              <p>Con $1.500 hay opciones, pero no todas cubren 20 km al día durante varios años. Hay que comparar precio, autonomía y uso.</p>
+            </article>
+          </div>
+          <p class="micro">Se excluyó un anuncio atípico para no distorsionar la recomendación.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="step" data-step="2" hidden aria-labelledby="s2t">
+      <div class="lucy-mini">
+        <span class="lucy-avatar lucy-avatar-sm" aria-hidden="true">L</span>
+        <div class="lucy-mini-body">
+          <strong>El perfil de Lucy</strong>
+          <p class="micro" id="perfilResumen"></p>
+        </div>
+      </div>
+      <p class="kicker">Escena 2 · La decisión</p>
+      <h2 id="s2t" tabindex="-1">Ahora ajusta los datos</h2>
+      <p class="lead">Puedes usar el perfil de Lucy o mover los controles. Todo lo que sigue se adapta a ti.</p>
+
+      <div class="panel compacto">
+        <div class="control-grid">
+          <div class="field">
+            <label for="presupuesto">Presupuesto <output id="presupuestoOut" for="presupuesto">$1.500</output></label>
+            <input type="range" id="presupuesto" min="100" max="7000" step="50" value="1500" aria-describedby="presupuestoHelp">
+            <div class="range-scale" id="presupuestoHelp" aria-hidden="true"><span>$100</span><span>$7.000</span></div>
+          </div>
+
+          <div class="field">
+            <label for="kmDia">Recorrido diario <output id="kmDiaOut" for="kmDia">20 km</output></label>
+            <input type="range" id="kmDia" min="2" max="120" step="1" value="20" aria-describedby="kmDiaHelp">
+            <div class="range-scale" id="kmDiaHelp" aria-hidden="true"><span>2 km</span><span>120 km</span></div>
+          </div>
+
+          <div class="field">
+            <label for="aniosUso">Años de uso <output id="aniosOut" for="aniosUso">3 años</output></label>
+            <input type="range" id="aniosUso" min="0" max="10" step="1" value="3" aria-describedby="aniosHelp">
+            <div class="range-scale" id="aniosHelp" aria-hidden="true"><span>Recién comprado</span><span>10 años</span></div>
+          </div>
+
+          <div class="field field-priority">
+            <label for="prioridad">¿Qué priorizas?</label>
+            <select id="prioridad" class="select-prioridad">
+              <option value="precio">Gastar menos</option>
+              <option value="autonomia">Llegar más lejos</option>
+              <option value="equilibrio" selected>Equilibrio</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title">Elige un tipo de vehículo</h3>
+      <p class="lead">Toca una tarjeta. Las estrellas traducen la calidad que reportaron los dueños.</p>
+      <div class="type-grid" id="typeGrid"></div>
+      <p class="hint" id="tipoHint"></p>
+      <details class="plegable">
+        <summary>Cómo leer las tarjetas</summary>
+        <div class="legend" aria-hidden="true">
+          <span><span class="dot dot-real"></span>Reportado por dueños</span>
+          <span><span class="dot dot-internet"></span>Promedio de anuncios</span>
+          <span><span class="dot dot-mercado"></span>Mercado informal</span>
+        </div>
+        <p class="micro">Estrellas: Buena = 5 · Regular = 3 · Mala = 1. La prioridad y los años cambian el orden de las recomendaciones. Los valores son estimaciones, no una tasación.</p>
+      </details>
+
+      <div class="actions nav-actions">
+        <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
+        <button type="button" class="btn btn-primary" data-next>Ver lo que dicen los dueños</button>
+      </div>
+    </section>
+
+    <section class="step" data-step="3" hidden aria-labelledby="s3t">
+      <div class="lucy-mini">
+        <span class="lucy-avatar lucy-avatar-sm" aria-hidden="true">L</span>
+        <div class="lucy-mini-body">
+          <strong>Lucy</strong>
+          <p class="micro">«No quiero que me vendan humo. Quiero saber qué me alcanza de verdad.»</p>
+        </div>
+      </div>
+      <p class="kicker">Escena 3 · La trampa</p>
+      <h2 id="s3t" tabindex="-1">El anuncio no es la realidad</h2>
+      <p class="lead">Este es el corazón del estudio: los anuncios de Internet prometen una autonomía que los dueños no reportan. La brecha no es un detalle: cambia lo que puedes hacer con el vehículo.</p>
+      <div class="actions actions-inline">
+        <button type="button" class="btn btn-accent" id="revelarReal">Mostrar la brecha real</button>
+      </div>
+      <div class="trampa-grid" id="trampaGrid"></div>
+      <p class="note" id="trampaNota" hidden></p>
+      <p class="micro">Los promedios de anuncios son de Internet. Los datos reales vienen de 35 encuestas a dueños y usuarios.</p>
+
+      <details class="plegable">
+        <summary>El paso del tiempo</summary>
+        <h3 class="section-title">La batería también cobra su precio</h3>
+        <p class="lead">Un vehículo no rinde igual el primer día que tres años después. Con los años, la autonomía baja y el costo por kilómetro sube. Ajusta los años en el cotizador para verlo.</p>
+        <div id="tiempoGrid" class="tiempo-list"></div>
+        <p class="micro">La pérdida es un promedio observado, no una garantía. Cada batería y cada uso son distintos.</p>
+      </details>
+
+      <h3 class="section-title">Lo que dicen quienes ya lo viven</h3>
+      <p class="lead">16 testimonios con nombre y apellido. Léelos como lo que son: experiencias, no estadísticas.</p>
+      <div class="carousel">
+        <button type="button" class="carousel-btn" id="prevVoz" aria-label="Testimonio anterior">←</button>
+        <div class="voz-card" id="vozCard" aria-live="polite"></div>
+        <button type="button" class="carousel-btn" id="nextVoz" aria-label="Testimonio siguiente">→</button>
+      </div>
+      <div class="dots" id="vozDots" aria-hidden="true"></div>
+
+      <div class="actions nav-actions">
+        <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
+        <button type="button" class="btn btn-primary" data-next>Ver la decisión de Lucy</button>
+      </div>
+    </section>
+
+    <section class="step" data-step="4" hidden aria-labelledby="s4t">
+      <div class="lucy-mini">
+        <span class="lucy-avatar lucy-avatar-sm" aria-hidden="true">L</span>
+        <div class="lucy-mini-body">
+          <strong>La decisión de Lucy</strong>
+          <p class="micro">Con los datos de los dueños, no con las promesas del anuncio.</p>
+        </div>
+      </div>
+      <p class="kicker">Escena 4 · Tu resultado</p>
+      <h2 id="s4t" tabindex="-1">¿Qué le conviene a Lucy?</h2>
+      <p class="lead">La recomendación combina tu presupuesto, tu recorrido y la autonomía real que reportan los dueños. No elige el anuncio más llamativo: elige el que aguanta tu uso.</p>
+      <div id="resultado"></div>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="copiarResultado">Copiar explicación</button>
+      </div>
+      <details class="plegable" id="alternativasDetalle">
+        <summary>Comparar con las otras opciones</summary>
+        <div id="alternativas" class="alternativas"></div>
+      </details>
+
+      <p class="kicker">Cierre</p>
+      <h3 class="section-title">La historia termina, la decisión es tuya</h3>
+      <p class="lead">Lucy ya sabe qué mirar antes de pagar: la autonomía que reportan los dueños, la pérdida con los años y el costo real por kilómetro. Ahora puedes ayudar a la próxima persona.</p>
+
+      <section class="feedback-panel" aria-labelledby="feedbackTitulo">
+        <h3 id="feedbackTitulo">¿Qué te pareció la historia de Lucy?</h3>
+        <p>Tu valoración ayuda a mejorar la experiencia. Es anónima y se guarda en este navegador.</p>
+        <div class="stars-input" id="feedbackEstrellas" role="radiogroup" aria-label="Valoración de la historia de 1 a 5 estrellas">
+          <button type="button" data-val="1" role="radio" aria-checked="false" tabindex="0" aria-label="1 estrella">★</button>
+          <button type="button" data-val="2" role="radio" aria-checked="false" tabindex="-1" aria-label="2 estrellas">★</button>
+          <button type="button" data-val="3" role="radio" aria-checked="false" tabindex="-1" aria-label="3 estrellas">★</button>
+          <button type="button" data-val="4" role="radio" aria-checked="false" tabindex="-1" aria-label="4 estrellas">★</button>
+          <button type="button" data-val="5" role="radio" aria-checked="false" tabindex="-1" aria-label="5 estrellas">★</button>
+        </div>
+        <p class="star-caption" id="feedbackTexto">Sin calificar</p>
+        <p class="form-status" id="feedbackStatus" role="status" aria-live="polite"></p>
+      </section>
+
+      <details class="plegable" id="encuestaDetalle">
+        <summary>Cuéntanos tu experiencia (opcional)</summary>
+        <h3 class="section-title">Comparte tu experiencia</h3>
+        <p class="lead">Si tienes un vehículo, cuenta lo que los anuncios no dicen. Tu respuesta queda en <strong>tu navegador</strong>: esta versión estática no la envía a un servidor.</p>
+
+        <form id="encuestaForm" class="panel" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="encTipo">Tipo de vehículo</label>
+              <select id="encTipo" required>
+                <option value="">Elige uno</option>
+                <option value="Moto eléctrica">Moto eléctrica</option>
+                <option value="Bicicleta eléctrica">Bicicleta eléctrica</option>
+                <option value="Patinete eléctrico">Patinete eléctrico</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="encMarca">Marca y modelo</label>
+              <input id="encMarca" type="text" maxlength="80" placeholder="Ej.: CubAmerica" required>
+            </div>
+            <div class="field">
+              <label for="encAnios">Años de uso</label>
+              <input id="encAnios" type="number" min="0" max="40" step="1" value="1">
+            </div>
+            <div class="field">
+              <label for="encPrecio">Precio de compra (USD)</label>
+              <input id="encPrecio" type="number" min="0" step="1" value="1000">
+            </div>
+            <div class="field">
+              <label for="encNueva">Autonomía nueva (km)</label>
+              <input id="encNueva" type="number" min="1" step="1" value="50">
+            </div>
+            <div class="field">
+              <label for="encActual">Autonomía actual (km)</label>
+              <input id="encActual" type="number" min="0" step="1" value="40">
+            </div>
+          </div>
+
+          <div class="field">
+            <p class="field-label">Calidad general</p>
+            <div class="stars-input" id="estrellasInput" role="radiogroup" aria-label="Calidad general de 1 a 5 estrellas">
+              <button type="button" data-val="1" role="radio" aria-checked="false" tabindex="0" aria-label="1 estrella">★</button>
+              <button type="button" data-val="2" role="radio" aria-checked="false" tabindex="-1" aria-label="2 estrellas">★</button>
+              <button type="button" data-val="3" role="radio" aria-checked="false" tabindex="-1" aria-label="3 estrellas">★</button>
+              <button type="button" data-val="4" role="radio" aria-checked="false" tabindex="-1" aria-label="4 estrellas">★</button>
+              <button type="button" data-val="5" role="radio" aria-checked="false" tabindex="-1" aria-label="5 estrellas">★</button>
+            </div>
+            <p class="star-caption" id="estrellasTexto">Sin calificar</p>
+          </div>
+
+          <div class="field">
+            <label for="encOpinion">¿Qué debería saber alguien antes de comprar?</label>
+            <textarea id="encOpinion" rows="3" maxlength="600" placeholder="Lo bueno, lo malo y lo que los anuncios no dicen."></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary">Guardar respuesta</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <details class="plegable">
+        <summary>Tus respuestas guardadas (<span id="copiaCount">0</span>)</summary>
+        <section class="copia-panel" aria-labelledby="copiaTitulo">
+          <h3 id="copiaTitulo">Descarga una copia</h3>
+          <p>Las respuestas están en este navegador. Descárgalas para conservarlas o compartirlas manualmente.</p>
+          <div class="actions">
+            <button type="button" class="btn btn-ghost btn-small" id="descargarJSON" disabled>Descargar JSON</button>
+            <button type="button" class="btn btn-ghost btn-small" id="descargarCSV" disabled>Descargar CSV</button>
+          </div>
+          <div id="copiaLista"></div>
+        </section>
+      </details>
+
+      <div class="cierre-acciones">
+        <a class="btn btn-primary btn-big" href="https://github.com/AdrianaAmadorVerdecia/analisis-del-mercado-de-motos-bicicletas-patinetes" target="_blank" rel="noopener">Ver análisis completo</a>
+        <a class="btn btn-ghost" href="https://github.com/AdrianaAmadorVerdecia?tab=repositories" target="_blank" rel="noopener">Mi repositorio UI</a>
+      </div>
+      <!-- Reemplaza la URL de "Mi repositorio UI" por la de tu repositorio exacto cuando esté publicado. -->
+
+      <details class="plegable">
+        <summary>Cómo se calcula y fuentes</summary>
+        <p class="micro">Los precios y autonomías son referencias del estudio, no ofertas en venta. Verifica siempre el estado real de la batería.</p>
+        <p class="metodo">Este sitio no inventa datos: toma 406 anuncios (405 usados en el cálculo) y 35 encuestas del estudio de Adriana Amador Verdecia (MATCOM, Universidad de La Habana). Las estrellas traducen la calidad reportada: Buena = 5, Regular = 3, Mala = 1. El cálculo sugiere, no decide por ti.</p>
+        <div class="metodo-grid">
+          <div><strong>Observado</strong><span>406 anuncios y 35 encuestas del estudio.</span></div>
+          <div><strong>Calculado</strong><span>Precio por km ajustado con pérdida de autonomía y tope conservador del 20 % sobre el promedio reportado.</span></div>
+          <div><strong>Interpretación</strong><span>Las estrellas resumen la calidad reportada por los dueños.</span></div>
+          <div><strong>Límites</strong><span>Muestra pequeña, precios cambiantes, baterías distintas. No es una tasación.</span></div>
+        </div>
+        <p class="fuente">Fuente: <a href="https://github.com/AdrianaAmadorVerdecia/analisis-del-mercado-de-motos-bicicletas-patinetes" target="_blank" rel="noopener">repositorio del estudio</a> · Uso educativo.</p>
+      </details>
+
+      <div class="actions nav-actions">
+        <button type="button" class="btn btn-ghost" data-prev>Atrás</button>
+        <button type="button" class="btn btn-ghost" id="reiniciarFinal">Volver a empezar</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Historia interactiva basada en “El precio de la autonomía” de Adriana Amador Verdecia · MATCOM, Universidad de La Habana.</p>
+    <p><a href="https://github.com/AdrianaAmadorVerdecia/analisis-del-mercado-de-motos-bicicletas-patinetes" target="_blank" rel="noopener">Repositorio del estudio</a></p>
+  </footer>
+
+  <script src="js/datos.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/encuesta.js" defer></script>
+</body>
+</html>

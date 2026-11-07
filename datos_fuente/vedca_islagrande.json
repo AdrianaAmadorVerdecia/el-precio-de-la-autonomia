@@ -1,0 +1,83 @@
+{
+  "fuente": "VEDCA (Islagrande)",
+  "url": "https://islagrande.com/marketplace/seller/collection/shop/vedca/",
+  "fecha": "2026-10-06",
+  "moneda_original": "EUR",
+  "tasa_usd_por_eur": 1.13,
+  "productos_publicados": 29,
+  "productos_relevantes": 10,
+  "descartados_por_tipo": {},
+  "productos": [
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Bicicleta electrica",
+      "precio_usd": 1245.28,
+      "autonomia_max_km": 90,
+      "bateria": "LIFEPO4 / 60V / 30Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Moto electrica",
+      "precio_usd": 2107.6,
+      "autonomia_max_km": 90,
+      "bateria": "72V / 45Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Moto electrica",
+      "precio_usd": 1294.99,
+      "autonomia_max_km": 80,
+      "bateria": "LiFePO4 / 60V / 30Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Bicicleta electrica",
+      "precio_usd": 971.64,
+      "autonomia_max_km": 80,
+      "bateria": "LiFePO4 / 48V / 30Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Bicicleta electrica",
+      "precio_usd": 646.17,
+      "autonomia_max_km": 40,
+      "bateria": "Lifepo4 / 48V / 12Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Bicicleta electrica",
+      "precio_usd": 604.98,
+      "autonomia_max_km": 40,
+      "bateria": "Lifepo4 / 48V / 12Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Moto electrica",
+      "precio_usd": 2013.83,
+      "autonomia_max_km": 100,
+      "bateria": "LiFePO4 / 72V / 45Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Bicicleta electrica",
+      "precio_usd": 617.21,
+      "autonomia_max_km": 50,
+      "bateria": "Lead Acid / 48V / 20Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Moto electrica",
+      "precio_usd": 1388.52,
+      "autonomia_max_km": 80,
+      "bateria": "LiFePO4 / 60V / 30Ah"
+    },
+    {
+      "marca": "VEDCA",
+      "tipo_vehiculo": "Moto electrica",
+      "precio_usd": 1567.75,
+      "autonomia_max_km": 80,
+      "bateria": "LiFePO4"
+    }
+  ],
+  "total_originales": 10
+}
