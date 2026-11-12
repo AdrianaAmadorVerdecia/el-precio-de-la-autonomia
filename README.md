@@ -1,17 +1,17 @@
-# El precio de la autonomía · Historia interactiva
+# Campaña Publicitaria: "Historias que los datos cuentan"
 
-Historia web interactiva basada en el estudio de Adriana Amador Verdecia sobre el
-mercado de vehículos eléctricos en La Habana. Sigue a Lucy, una estudiante con $1.500,
-y muestra la diferencia entre la autonomía anunciada y la real, el paso del tiempo y lo
-que reportan los dueños.
+**Asignatura:** Comunicación
+**Carrera:** Ciencia de Datos (1er año)
+**Autor:** [Pon tu nombre aquí]
 
-Son 4 escenas cortas: Lucy y la evidencia, la decisión, la trampa de la autonomía y el
-resultado final. Incluye recomendación según presupuesto, recorrido, años y prioridad;
-testimonios; encuesta y feedback guardados en el navegador.
+##  Sobre la campaña
+Este repositorio contiene los materiales de la campaña publicitaria diseñada para promocionar un sitio web interactivo. El sitio presenta una historia basada en un proyecto de ciencia de datos, con el objetivo de acercar al público a cómo se analizan y cuentan las historias a través de los datos.
 
-**Web:** https://adrianaamadorverdecia.github.io/el-precio-de-la-autonomia/  
-**Repo:** https://github.com/AdrianaAmadorVerdecia/el-precio-de-la-autonomia
+La campaña se centró en generar tráfico web de calidad, invitando a los usuarios a explorar la historia de forma interactiva a través de diferentes canales digitales y físicos.
 
-## Abrir en local
+##  Enlace al Sitio Web
+El producto principal de esta campaña es el sitio web interactivo. Puedes visitarlo y explorar la historia directamente en el siguiente enlace:
+👉 **[Visitar el sitio web interactivo](https://adrianaamadorverdecia.github.io/el-precio-de-la-autonomia/)** 👈
 
-Doble clic en `index.html` o ejecutar `Abrir sitio.bat`.
+## Nota
+El plan de campaña y el flyer promocional se encuentran subidos como archivos adjuntos en este mismo repositorio.
